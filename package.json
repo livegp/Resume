@@ -1,21 +1,21 @@
 {
-  "name": "goit-js-hw-11",
+  "name": "resume",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://livegp.github.io/goit-js-hw-11",
+  "homepage": "https://livegp.github.io/resume",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
+    "build": "parcel build src/*.html --public-url /resume/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/livegp/goit-js-hw-11.git"
+    "url": "git+https://github.com/livegp/resume.git"
   },
   "keywords": [],
   "author": "Oleksander Pishta <live.gp@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/livegp/goit-js-hw-11/issues"
+    "url": "https://github.com/livegp/resume/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
