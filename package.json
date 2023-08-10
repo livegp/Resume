@@ -18,7 +18,11 @@
     "url": "https://github.com/livegp/resume/issues"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/packager-xml": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "@parcel/transformer-xml": "^2.8.3",
     "buffer": "^5.7.1",
     "parcel": "^2.8.3",
     "parcel-reporter-clean-dist": "^1.0.4",

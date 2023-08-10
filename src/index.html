@@ -1,35 +1,563 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <meta name="description" content="Резюме Пішта Олександр">
+    <!--========== FAVICON ==========-->
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png" />
+      <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicon/android-chrome-192x192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./favicon/android-chrome-512x512.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#3b5998" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicon/mstile-144x144.png" />
+    <meta
+      name="msapplication-config"
+      content="./favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--========== OPEN GRAPH Facebook ==========-->
+    <meta property="og:site_name" content="Олександр Пішта" />
+    <meta property="og:image" content="./favicon/og-image.jpg" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="524" />
+    <meta property="og:url" content="https://resume-pishta.netlify.app/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Вас вітає Олександр" />
+    <meta property="og:description" content="Все що ви хотіли знати про мене" />
+    <meta name="author" content="Олександр Пішта" />
+    <meta name="description" content="Резюме Олександр Пішта" />
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!--========== CSS ==========-->
+    <!-- Загальний -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!--====== toPDF ======-->
+    <link rel="stylesheet" type="text/css" href="./css/scaleToPDF.css" />
+    <!-- Друк -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/print.css"
+      media="print" />
+    <!-- Адаптація -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/screen.css"
+      media="screen" />
+    <title>Олександр Пішта</title>
   </head>
+  <!-- Зменьшення шрифту   <body class="scale-cv"> -->
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
-        >
-          <path
-            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
-          ></path>
-        </svg>
-      </button>
-    </form>
-    <div class="loader"></div>
-    <div class="gallery"></div>
-    <script type="module" src="js/index.js"></script>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <div>
+          <a download="Resume_Pishta" href="./pdf/Resume_Pishta.pdf">
+            <i class="bx bx-download home__button"></i>
+          </a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Головна
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#languages" class="nav__link">
+                <i class="bx bx-user-voice nav__icon"></i>Мови
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Скіли
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#interests" class="nav__link">
+                <i class="bx bx-landscape nav__icon"></i>Інтереси
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Про себе
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>Досвід
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bxs-graduation nav__icon"></i>Освіта
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#courses" class="nav__link">
+                <i class="bx bx-edit nav__icon"></i>Курси
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Сертифікати
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle nav__btn" id="nav-toggle">
+          <span class="burger"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__section bd-grid">
+                <img
+                  src="./img/perfil.jpg"
+                  alt="my photo"
+                  class="home__img"
+                  tabindex="0" />
+              </div>
+              <div class="home__data bd-grid">
+                <h1 class="home__title">ОЛЕКСАНДР <b>ПІШТА</b></h1>
+                <h3 class="home__profession">Web розробник</h3>
+              </div>
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <a
+                    href="https://goo.gl/maps/K226a75fPeYMoFjHA"
+                    class="home__link">
+                    <i class="bx bx-map home__icon"></i>
+                    Україна, Запорізька, м.Гуляйполе
+                  </a>
+                </span>
+                <span class="home__information">
+                  <a href="mailto:live.gp@gmail.com" class="home__link">
+                    <i class="bx bx-envelope home__icon"></i>
+                    live.gp@gmail.com
+                  </a>
+                </span>
+                <span class="home__information">
+                  <a href="tel:+380667867752" class="home__link">
+                    <i class="bx bx-phone home__icon"></i>
+                    +380 66 786 77 52
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon chenge-theme"
+              title="Тема"
+              id="theme-button"></i>
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Створення PDF"
+              id="resume-button"></i>
+          </section>
+          <!--========== SOCIAL ==========-->
+          <section class="social section" id="social">
+            <h2 class="section-title">МЕРЕЖА</h2>
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/oleksandr-pishta/"
+                target="_blank"
+                class="social__link">
+                <i class="bx bxl-linkedin-square social__icon"></i>linkedin
+              </a>
+              <a
+                href="https://www.facebook.com/oleksandr.pishta/"
+                target="_blank"
+                class="social__link">
+                <i class="bx bxl-facebook-square social__icon"></i>facebook
+              </a>
+              <a
+                href="https://www.instagram.com/pishtaoleksandr/"
+                target="_blank"
+                class="social__link">
+                <i class="bx bxl-instagram-alt social__icon"></i>instagram
+              </a>
+              <a
+                href="https://twitter.com/live_gp"
+                target="_blank"
+                class="social__link">
+                <i class="bx bxl-twitter social__icon"></i>twitter
+              </a>
+              <a
+                href="viber://chat?number=%2B380667867752"
+                target="_blank"
+                class="social__link">
+                <i class="bx bxs-phone-call social__icon"></i>viber
+              </a>
+              <a
+                href="https://telegram.me/live_gp"
+                target="_blank"
+                class="social__link">
+                <i class="bx bxl-telegram social__icon"></i>telegram
+              </a>
+            </div>
+          </section>
+          <!--========== LANGUAGES ==========-->
+          <section class="section" id="languages">
+            <h2 class="section-title">МОВИ</h2>
+            <div class="languages__container bd-grid">
+              <div>
+                <span class="languages__circle"></span>Українська
+                <div class="languages__f-line">
+                  <div class="languages__line" style="width: 100%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Російська
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 100%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Німецька
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 15%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Англійська
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 5%"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== SKILLS  ==========-->
+          <section class="section" id="skills">
+            <h2 class="section-title">СКІЛИ</h2>
+            <div class="skills__container bd-grid">
+              <div>
+                <span class="skills__circle"></span>Html
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Css
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>JavaScript
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>React
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== INTERESTS ==========-->
+          <section class="section" id="interests">
+            <h2 class="section-title">ІНТЕРЕСИ</h2>
+            <div class="interests__container bd-grid">
+              <div><i class="bx bx-headphone interests__icon"></i>Музика</div>
+              <div><i class="bx bx-cycling interests__icon"></i>Вело</div>
+              <div><i class="bx bx-book interests__icon"></i>Право</div>
+              <div><i class="bx bx-dumbbell interests__icon"></i>Спорт</div>
+            </div>
+          </section>
+        </div>
+        <div class="resume__right">
+          <!--========== ABOUT ==========-->
+          <section class="about section" id="about">
+            <h2 class="section-title">Про себе</h2>
+            <p class="about__description">
+              Мене звати Олександр, мені 39 років
+            </p>
+          </section>
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Досвід</h2>
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    Провідний спеціаліст відділу з обслуговування клієнтів
+                  </h3>
+                  <span class="experience__company"
+                    >2012 - До тепер | УДКСУ у Гуляйпільському районі
+                  </span>
+                  <p class="experience__description">
+                    Контроль з дотримання бюджетного законодавства, введення та
+                    взяття облік розписів, кошторисів, планів використання та
+                    змін до них, бюджетних та фінансових зобовязань, проведення
+                    видатків
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Графічний дизайнер</h3>
+                  <span class="experience__company"
+                    >2010 - 2012 | ФОП Кубрак</span
+                  >
+                  <p class="experience__description">
+                    Створення графічного дизайну памятників, та перенос
+                    зображення за допомогою станка на камінь
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Продавець - консультант</h3>
+                  <span class="experience__company"
+                    >2007 - 2009 | ФОП Міщенко</span
+                  >
+                  <p class="experience__description">
+                    Роздрібна торгівля побутової та комп'ютерної техніким,
+                    збирання та налаштування ПК
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Менеджер РІПа</h3>
+                  <span class="experience__company"
+                    >2006 - 2008 | ПАТ КБ «Приватбанк»</span
+                  >
+                  <p class="experience__description">
+                    Оформлення споживчих кредитів
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Освіта</h2>
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">Спеціаліст з фінансів</h3>
+                  <span class="education__company"
+                    >2000 - 2005 | Запорізька державна інженерна академія</span
+                  >
+                  <!-- <span class="education__year"></span> -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== COURSES ==========-->
+          <section class="section" id="courses">
+            <h2 class="section-title">КУРСИ</h2>
+            <div class="courses__container bd-grid">
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">Кандидат</h3>
+                  <span class="courses__company"
+                    >2020 | Дія.Цифрова освіта
+                  </span>
+                  <!-- <p class="courses__description">
+                  </p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Цифрова грамотність державних службовців 1.0. на базі
+                    інструментів Google
+                  </h3>
+                  <span class="courses__company"
+                    >2020 | Дія.Цифрова освіта</span
+                  >
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Ефективний бюджетний процес в органах місцевого
+                    самоврядування
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus </span>
+                  <!-- <p class="experience__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Психологія стресу та спосіб боротьби з ним
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Як ефективно спланувати та провести діалог
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <span class="courses__line"></span>
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Конфлікт інтересів: треба знати! Від теорії до практики
+                  </h3>
+                  <span class="courses__company">2019 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+              <div class="courses__content">
+                <div class="courses__time">
+                  <span class="courses__rounder"></span>
+                  <!-- <span class="courses__line"></span> -->
+                </div>
+                <div class="courses__data bd-grid">
+                  <h3 class="courses__title">
+                    Конфлікт інтересів: треба знати!
+                  </h3>
+                  <span class="courses__company">2018 | Prometheus</span>
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificate">
+            <h2 class="section-title">СЕРТИФІКАТИ</h2>
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <div class="certificate__time">
+                  <span class="certificate__rounder"></span>
+                  <span class="certificate__line"></span>
+                </div>
+                <div class="certificate__data bd-grid">
+                  <h3 class="certificate__title">
+                    Cертифікат рівня цифрової грамотності середній В2
+                  </h3>
+                  <span class="courses__company"
+                    >2020 | Дія.Цифрова освіта
+                  </span>
+                  <!-- <p class="courses__description">
+                  </p> -->
+                </div>
+              </div>
+              <div class="certificate__content">
+                <div class="certificate__time">
+                  <span class="certificate__rounder"></span>
+                  <!-- <span class="certificate__line"></span> -->
+                </div>
+                <div class="certificate__data bd-grid">
+                  <h3 class="certificate__title">
+                    Посвідчення щодо вільного володіння державною мовою
+                  </h3>
+                  <span class="courses__company"
+                    >2019 | Запорізький національний університет</span
+                  >
+                  <!-- <p class="courses__description"></p> -->
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+    <!--========== HTML2PDF ==========-->
+    <script src="./js/html2pdf.bundle.min.js"></script>
+    <!--========== MAIN JS ==========-->
+    <script src="./js/main.js"></script>
   </body>
 </html>
