@@ -85,6 +85,7 @@ body.dark-theme {
   top: 2.2rem;
   display: flex;
   color: var(--text-color);
+  fill: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -95,9 +96,15 @@ body.dark-theme {
 .home__button {
   font-size: 1.2rem;
   cursor: pointer;
-  color: var(--title-color);
+  color: var(--text-color);
   font-weight: var(--font-medium);
+  fill: var(--text-color);
 }
+
+.home__button:hover {
+  fill: var(--title-color);
+}
+
 /*========== Generate PDF button ==========*/
 .generate-pdf {
   display: none;
@@ -106,6 +113,7 @@ body.dark-theme {
   right: 0;
   font-size: 1.2rem;
   color: var(--text-color);
+  fill: var(--text-color);
   cursor: pointer;
 }
 .generate-pdf:hover {
@@ -207,10 +215,12 @@ body.dark-theme {
   flex-direction: column;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  fill: var(--text-color-light);
   font-weight: var(--font-medium);
 }
 .nav__link:hover {
   color: var(--title-color);
+  fill: var(--title-color);
 }
 .nav__icon {
   font-size: 1.2rem;
@@ -223,6 +233,7 @@ body.dark-theme {
 /* Active menu link */
 .active-link {
   color: var(--title-color);
+  fill: var(--title-color);
 }
 /*==== Бургер меню ====*/
 .nav__btn {
@@ -240,10 +251,15 @@ body.dark-theme {
   width: 100%;
   position: absolute;
   height: 2px;
-  background: var(--title-color);
+  background: var(--text-color);
   display: block;
   transition: 0.3s;
   border-radius: 5px;
+}
+.burger:hover,
+.burger:hover:before,
+.burger:hover:after {
+  background: var(--title-color);
 }
 .burger:before {
   content: "";
@@ -315,6 +331,7 @@ body.dark-theme {
 }
 .home__title {
   font-size: var(--h1-font-size);
+  text-transform: uppercase;
 }
 .home__profession {
   font-size: var(--normal-font-size);
@@ -359,12 +376,20 @@ body.dark-theme {
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--text-color);
+  fill: var(--text-color);
 }
 .social__link:hover {
   color: var(--title-color);
+  fill: var(---title-color);
 }
+
+.interests {
+  display: flex;
+}
+
 .social__icon,
 .interests__icon {
+  fill: var(--text-color);
   font-size: 1.2rem;
   margin-right: 0.5rem;
   vertical-align: top;

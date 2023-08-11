@@ -1,50 +1,56 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="eu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Резюме Пішта Олександр">
+    <meta name="description" content="Резюме Пішта Олександр" />
     <!--========== FAVICON ==========-->
     <link
       rel="shortcut icon"
       href="./favicon/favicon.ico"
-      type="image/x-icon" />
+      type="image/x-icon"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon/favicon-16x16.png" />
+      href="./favicon/favicon-16x16.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon/favicon-32x32.png" />
-      <link
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="./favicon/android-chrome-192x192.png" />
+      href="./favicon/android-chrome-192x192.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="./favicon/android-chrome-512x512.png" />
+      href="./favicon/android-chrome-512x512.png"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./favicon/apple-touch-icon.png" />
+      href="./favicon/apple-touch-icon.png"
+    />
     <link rel="manifest" href="./favicon/site.webmanifest" />
     <link
       rel="mask-icon"
       href="./favicon/safari-pinned-tab.svg"
-      color="#3b5998" />
+      color="#3b5998"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta
       name="msapplication-TileImage"
-      content="./favicon/mstile-144x144.png" />
-    <meta
-      name="msapplication-config"
-      content="./favicon/browserconfig.xml" />
+      content="./favicon/mstile-144x144.png"
+    />
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <!--========== OPEN GRAPH Facebook ==========-->
     <meta property="og:site_name" content="Олександр Пішта" />
@@ -60,7 +66,8 @@
     <!--========== BOX ICONS ==========-->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <!--========== CSS ==========-->
     <!-- Загальний -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
@@ -71,70 +78,121 @@
       rel="stylesheet"
       type="text/css"
       href="./css/print.css"
-      media="print" />
+      media="print"
+    />
     <!-- Адаптація -->
     <link
       rel="stylesheet"
       type="text/css"
       href="./css/screen.css"
-      media="screen" />
+      media="screen"
+    />
     <title>Олександр Пішта</title>
   </head>
-  <!-- Зменьшення шрифту   <body class="scale-cv"> -->
+  <!-- Decrease font size   <body class="scale-cv"> -->
   <body>
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
       <nav class="nav bd-container">
         <div>
           <a download="Resume_Pishta" href="./pdf/Resume_Pishta.pdf">
-            <i class="bx bx-download home__button"></i>
+            <div class="home__button">
+              <svg width="20px" height="20px">
+                <use href="./img/sprite.svg#download" />
+              </svg>
+            </div>
           </a>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home nav__icon"></i>Головна
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#home" />
+                  </svg>
+                </div>
+                Home
               </a>
             </li>
             <li class="nav__item">
               <a href="#languages" class="nav__link">
-                <i class="bx bx-user-voice nav__icon"></i>Мови
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#user-voice" />
+                  </svg>
+                </div>
+                Languages
               </a>
             </li>
             <li class="nav__item">
               <a href="#skills" class="nav__link">
-                <i class="bx bx-receipt nav__icon"></i>Скіли
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#receipt" />
+                  </svg>
+                </div>
+                Skills
               </a>
             </li>
             <li class="nav__item">
               <a href="#interests" class="nav__link">
-                <i class="bx bx-landscape nav__icon"></i>Інтереси
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#landscape" />
+                  </svg>
+                </div>
+                Interests
               </a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>Про себе
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#user" />
+                  </svg>
+                </div>
+                About my
               </a>
             </li>
             <li class="nav__item">
               <a href="#experience" class="nav__link">
-                <i class="bx bx-briefcase-alt nav__icon"></i>Досвід
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#briefcase" />
+                  </svg>
+                </div>
+                Experience
               </a>
             </li>
             <li class="nav__item">
               <a href="#education" class="nav__link">
-                <i class="bx bxs-graduation nav__icon"></i>Освіта
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#graduation" />
+                  </svg>
+                </div>
+                Education
               </a>
             </li>
             <li class="nav__item">
               <a href="#courses" class="nav__link">
-                <i class="bx bx-edit nav__icon"></i>Курси
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#edit" />
+                  </svg>
+                </div>
+                Courses
               </a>
             </li>
             <li class="nav__item">
               <a href="#certificates" class="nav__link">
-                <i class="bx bx-award nav__icon"></i>Сертифікати
+                <div class="nav__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#award" />
+                  </svg>
+                </div>
+                Certificates
               </a>
             </li>
           </ul>
@@ -156,19 +214,21 @@
                   src="./img/perfil.jpg"
                   alt="my photo"
                   class="home__img"
-                  tabindex="0" />
+                  tabindex="0"
+                />
               </div>
               <div class="home__data bd-grid">
-                <h1 class="home__title">ОЛЕКСАНДР <b>ПІШТА</b></h1>
-                <h3 class="home__profession">Web розробник</h3>
+                <h1 class="home__title">Олександр <b>Пішта</b></h1>
+                <h3 class="home__profession">Web developer</h3>
               </div>
               <div class="home__address bd-grid">
                 <span class="home__information">
                   <a
                     href="https://goo.gl/maps/K226a75fPeYMoFjHA"
-                    class="home__link">
+                    class="home__link"
+                  >
                     <i class="bx bx-map home__icon"></i>
-                    Україна, Запорізька, м.Гуляйполе
+                    Ukraine, Zaporizhzhya, Gulyapole
                   </a>
                 </span>
                 <span class="home__information">
@@ -188,80 +248,118 @@
             <!-- Theme change button -->
             <i
               class="bx bx-moon chenge-theme"
-              title="Тема"
-              id="theme-button"></i>
+              title="Theme"
+              id="theme-button"
+            ></i>
             <!-- Button to generate and download the pdf. Available for desktop. -->
-            <i
-              class="bx bx-download generate-pdf"
-              title="Створення PDF"
-              id="resume-button"></i>
+            <div class="generate-pdf" title="PDF creation" id="resume-button">
+              <svg width="20px" height="20px">
+                <use href="./img/sprite.svg#download" />
+              </svg>
+            </div>
           </section>
           <!--========== SOCIAL ==========-->
           <section class="social section" id="social">
-            <h2 class="section-title">МЕРЕЖА</h2>
+            <h2 class="section-title">Social</h2>
             <div class="social__container bd-grid">
               <a
                 href="https://www.linkedin.com/in/oleksandr-pishta/"
                 target="_blank"
-                class="social__link">
-                <i class="bx bxl-linkedin-square social__icon"></i>linkedin
+                class="social__link"
+              >
+                <div class="social__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#linkedin" />
+                  </svg>
+                </div>
+                linkedin
               </a>
               <a
                 href="https://www.facebook.com/oleksandr.pishta/"
                 target="_blank"
-                class="social__link">
-                <i class="bx bxl-facebook-square social__icon"></i>facebook
+                class="social__link"
+              >
+                <div class="social__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#facebook" />
+                  </svg>
+                </div>
+                facebook
               </a>
               <a
                 href="https://www.instagram.com/pishtaoleksandr/"
                 target="_blank"
-                class="social__link">
-                <i class="bx bxl-instagram-alt social__icon"></i>instagram
+                class="social__link"
+              >
+                <div class="social__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#instagram" />
+                  </svg>
+                </div>
+                instagram
               </a>
               <a
                 href="https://twitter.com/live_gp"
                 target="_blank"
-                class="social__link">
-                <i class="bx bxl-twitter social__icon"></i>twitter
+                class="social__link"
+              >
+                <div class="social__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#twitter" />
+                  </svg>
+                </div>
+                twitter
               </a>
               <a
                 href="viber://chat?number=%2B380667867752"
                 target="_blank"
-                class="social__link">
-                <i class="bx bxs-phone-call social__icon"></i>viber
+                class="social__link"
+              >
+                <div class="social__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#viber" />
+                  </svg>
+                </div>
+                viber
               </a>
               <a
                 href="https://telegram.me/live_gp"
                 target="_blank"
-                class="social__link">
-                <i class="bx bxl-telegram social__icon"></i>telegram
+                class="social__link"
+              >
+                <div class="social__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#telegram" />
+                  </svg>
+                </div>
+                telegram
               </a>
             </div>
           </section>
           <!--========== LANGUAGES ==========-->
           <section class="section" id="languages">
-            <h2 class="section-title">МОВИ</h2>
+            <h2 class="section-title">Languages</h2>
             <div class="languages__container bd-grid">
               <div>
-                <span class="languages__circle"></span>Українська
+                <span class="languages__circle"></span>Ukrainian
                 <div class="languages__f-line">
                   <div class="languages__line" style="width: 100%"></div>
                 </div>
               </div>
               <div>
-                <span class="skills__circle"></span>Російська
+                <span class="skills__circle"></span>Russian
                 <div class="skills__f-line">
                   <div class="skills__line" style="width: 100%"></div>
                 </div>
               </div>
               <div>
-                <span class="skills__circle"></span>Німецька
+                <span class="skills__circle"></span>Deutsch
                 <div class="skills__f-line">
                   <div class="skills__line" style="width: 15%"></div>
                 </div>
               </div>
               <div>
-                <span class="skills__circle"></span>Англійська
+                <span class="skills__circle"></span>English
                 <div class="skills__f-line">
                   <div class="skills__line" style="width: 5%"></div>
                 </div>
@@ -270,7 +368,7 @@
           </section>
           <!--========== SKILLS  ==========-->
           <section class="section" id="skills">
-            <h2 class="section-title">СКІЛИ</h2>
+            <h2 class="section-title">Skills</h2>
             <div class="skills__container bd-grid">
               <div>
                 <span class="skills__circle"></span>Html
@@ -300,26 +398,54 @@
           </section>
           <!--========== INTERESTS ==========-->
           <section class="section" id="interests">
-            <h2 class="section-title">ІНТЕРЕСИ</h2>
+            <h2 class="section-title">Interests</h2>
             <div class="interests__container bd-grid">
-              <div><i class="bx bx-headphone interests__icon"></i>Музика</div>
-              <div><i class="bx bx-cycling interests__icon"></i>Вело</div>
-              <div><i class="bx bx-book interests__icon"></i>Право</div>
-              <div><i class="bx bx-dumbbell interests__icon"></i>Спорт</div>
+              <div class="interests">
+                <div class="interests__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#headphone" />
+                  </svg>
+                </div>
+                Music
+              </div>
+              <div class="interests">
+                <div class="interests__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#cycling" />
+                  </svg>
+                </div>
+                Velo
+              </div>
+              <div class="interests">
+                <div class="interests__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#book" />
+                  </svg>
+                </div>
+                Legislation
+              </div>
+              <div class="interests">
+                <div class="interests__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#dumbbell" />
+                  </svg>
+                </div>
+                Sports
+              </div>
             </div>
           </section>
         </div>
         <div class="resume__right">
           <!--========== ABOUT ==========-->
           <section class="about section" id="about">
-            <h2 class="section-title">Про себе</h2>
+            <h2 class="section-title">About my</h2>
             <p class="about__description">
-              Мене звати Олександр, мені 39 років
+              My name is Oleksandr, I am 40 years old
             </p>
           </section>
           <!--========== EXPERIENCE ==========-->
           <section class="experience section" id="experience">
-            <h2 class="section-title">Досвід</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="experience__container bd-grid">
               <div class="experience__content">
                 <div class="experience__time">
@@ -328,16 +454,17 @@
                 </div>
                 <div class="experience__data bd-grid">
                   <h3 class="experience__title">
-                    Провідний спеціаліст відділу з обслуговування клієнтів
+                    Leading specialist of the customer service department
                   </h3>
                   <span class="experience__company"
-                    >2012 - До тепер | УДКСУ у Гуляйпільському районі
+                    >2012 - For now | Office of the State Treasury Service of
+                    Ukraine in Gulyaipil district
                   </span>
                   <p class="experience__description">
-                    Контроль з дотримання бюджетного законодавства, введення та
-                    взяття облік розписів, кошторисів, планів використання та
-                    змін до них, бюджетних та фінансових зобовязань, проведення
-                    видатків
+                    Control over compliance with budget legislation,
+                    introduction and recording of drawings, estimates, plans of
+                    use and changes to them, budgetary and financial
+                    obligations, spending
                   </p>
                 </div>
               </div>
@@ -347,13 +474,13 @@
                   <span class="experience__line"></span>
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Графічний дизайнер</h3>
+                  <h3 class="experience__title">Graphic designer</h3>
                   <span class="experience__company"
-                    >2010 - 2012 | ФОП Кубрак</span
+                    >2010 - 2012 | FOP Kubrak</span
                   >
                   <p class="experience__description">
-                    Створення графічного дизайну памятників, та перенос
-                    зображення за допомогою станка на камінь
+                    Creation of a graphic design of monuments, and printing of
+                    an image, using a machine, on a stone
                   </p>
                 </div>
               </div>
@@ -363,13 +490,13 @@
                   <span class="experience__line"></span>
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Продавець - консультант</h3>
+                  <h3 class="experience__title">The seller is a consultant</h3>
                   <span class="experience__company"
-                    >2007 - 2009 | ФОП Міщенко</span
+                    >2007 - 2009 | FOP Mishchenko</span
                   >
                   <p class="experience__description">
-                    Роздрібна торгівля побутової та комп'ютерної техніким,
-                    збирання та налаштування ПК
+                    Retail trade of household and computer equipment, assembly
+                    and adjustment of PCs
                   </p>
                 </div>
               </div>
@@ -379,12 +506,12 @@
                   <!-- <span class="experience__line"></span> -->
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Менеджер РІПа</h3>
+                  <h3 class="experience__title">RIP manager</h3>
                   <span class="experience__company"
-                    >2006 - 2008 | ПАТ КБ «Приватбанк»</span
+                    >2006 - 2008 | PJSC CB "Privatbank"</span
                   >
                   <p class="experience__description">
-                    Оформлення споживчих кредитів
+                    Issuance of consumer loans
                   </p>
                 </div>
               </div>
@@ -392,7 +519,7 @@
           </section>
           <!--========== EDUCATION ==========-->
           <section class="education section" id="education">
-            <h2 class="section-title">Освіта</h2>
+            <h2 class="section-title">Education</h2>
             <div class="education__container bd-grid">
               <div class="education__content">
                 <div class="education__time">
@@ -400,9 +527,9 @@
                   <!-- <span class="education__line"></span> -->
                 </div>
                 <div class="education__data bd-grid">
-                  <h3 class="education__title">Спеціаліст з фінансів</h3>
+                  <h3 class="education__title">Finance specialist</h3>
                   <span class="education__company"
-                    >2000 - 2005 | Запорізька державна інженерна академія</span
+                    >2000 - 2005 | Zaporizhia State Engineering Academy</span
                   >
                   <!-- <span class="education__year"></span> -->
                 </div>
@@ -411,7 +538,7 @@
           </section>
           <!--========== COURSES ==========-->
           <section class="section" id="courses">
-            <h2 class="section-title">КУРСИ</h2>
+            <h2 class="section-title">Courses</h2>
             <div class="courses__container bd-grid">
               <div class="courses__content">
                 <div class="courses__time">
@@ -419,9 +546,9 @@
                   <span class="courses__line"></span>
                 </div>
                 <div class="courses__data bd-grid">
-                  <h3 class="courses__title">Кандидат</h3>
+                  <h3 class="courses__title">Candidate</h3>
                   <span class="courses__company"
-                    >2020 | Дія.Цифрова освіта
+                    >2020 | Дія. Digital education
                   </span>
                   <!-- <p class="courses__description">
                   </p> -->
@@ -434,11 +561,11 @@
                 </div>
                 <div class="courses__data bd-grid">
                   <h3 class="courses__title">
-                    Цифрова грамотність державних службовців 1.0. на базі
-                    інструментів Google
+                    Digital literacy of civil servants 1.0. based on Google
+                    tools
                   </h3>
                   <span class="courses__company"
-                    >2020 | Дія.Цифрова освіта</span
+                    >2020 | Дія. Digital education</span
                   >
                   <!-- <p class="courses__description"></p> -->
                 </div>
@@ -450,8 +577,7 @@
                 </div>
                 <div class="courses__data bd-grid">
                   <h3 class="courses__title">
-                    Ефективний бюджетний процес в органах місцевого
-                    самоврядування
+                    Effective budget process in local bodies municipality
                   </h3>
                   <span class="courses__company">2019 | Prometheus </span>
                   <!-- <p class="experience__description"></p> -->
@@ -464,7 +590,7 @@
                 </div>
                 <div class="courses__data bd-grid">
                   <h3 class="courses__title">
-                    Психологія стресу та спосіб боротьби з ним
+                    The psychology of stress and how to deal with it
                   </h3>
                   <span class="courses__company">2019 | Prometheus</span>
                   <!-- <p class="courses__description"></p> -->
@@ -477,7 +603,7 @@
                 </div>
                 <div class="courses__data bd-grid">
                   <h3 class="courses__title">
-                    Як ефективно спланувати та провести діалог
+                    How to effectively plan and conduct a dialogue
                   </h3>
                   <span class="courses__company">2019 | Prometheus</span>
                   <!-- <p class="courses__description"></p> -->
@@ -490,7 +616,7 @@
                 </div>
                 <div class="courses__data bd-grid">
                   <h3 class="courses__title">
-                    Конфлікт інтересів: треба знати! Від теорії до практики
+                    Conflict of interest: you need to know! From theory to practice
                   </h3>
                   <span class="courses__company">2019 | Prometheus</span>
                   <!-- <p class="courses__description"></p> -->
@@ -503,7 +629,7 @@
                 </div>
                 <div class="courses__data bd-grid">
                   <h3 class="courses__title">
-                    Конфлікт інтересів: треба знати!
+                    Conflict of interest: you need to know!
                   </h3>
                   <span class="courses__company">2018 | Prometheus</span>
                   <!-- <p class="courses__description"></p> -->
@@ -513,7 +639,7 @@
           </section>
           <!--========== CERTIFICATES ==========-->
           <section class="certificate section" id="certificate">
-            <h2 class="section-title">СЕРТИФІКАТИ</h2>
+            <h2 class="section-title">Certificates</h2>
             <div class="certificate__container bd-grid">
               <div class="certificate__content">
                 <div class="certificate__time">
@@ -522,10 +648,10 @@
                 </div>
                 <div class="certificate__data bd-grid">
                   <h3 class="certificate__title">
-                    Cертифікат рівня цифрової грамотності середній В2
+                    Certificate of intermediate digital literacy level B2
                   </h3>
                   <span class="courses__company"
-                    >2020 | Дія.Цифрова освіта
+                    >2020 | Дія. Digital education
                   </span>
                   <!-- <p class="courses__description">
                   </p> -->
@@ -538,10 +664,10 @@
                 </div>
                 <div class="certificate__data bd-grid">
                   <h3 class="certificate__title">
-                    Посвідчення щодо вільного володіння державною мовою
+                    Certificate of fluency in the state language
                   </h3>
                   <span class="courses__company"
-                    >2019 | Запорізький національний університет</span
+                    >2019 | Zaporizhzhia National University</span
                   >
                   <!-- <p class="courses__description"></p> -->
                 </div>
