@@ -64,10 +64,10 @@
     <meta name="author" content="Олександр Пішта" />
     <meta name="description" content="Резюме Олександр Пішта" />
     <!--========== BOX ICONS ==========-->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    /> -->
     <!--========== CSS ==========-->
     <!-- Загальний -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
@@ -219,38 +219,78 @@
               </div>
               <div class="home__data bd-grid">
                 <h1 class="home__title">Oleksandr <b>Pishta</b></h1>
-                <h3 class="home__profession">Web developer</h3>
+                <h3 class="home__profession">Junior full stack developer</h3>
               </div>
               <div class="home__address bd-grid">
+                <a
+                  href="https://goo.gl/maps/K226a75fPeYMoFjHA"
+                  class="home__link"
+                  target="_blank"
+                >
+                  <div class="home__icon">
+                    <svg width="20px" height="20px">
+                      <use href="./img/sprite.svg#map" />
+                    </svg>
+                  </div>
+                  Ukraine, Zaporizhzhya, Gulyapole
+                  <svg class="external-link-icon" width="10px" height="10px">
+                    <use href="./img/sprite.svg#link" />
+                  </svg>
+                </a>
                 <span class="home__information">
                   <a
-                    href="https://goo.gl/maps/K226a75fPeYMoFjHA"
+                    href="mailto:live.gp@gmail.com"
                     class="home__link"
                   >
-                    <i class="bx bx-map home__icon"></i>
-                    Ukraine, Zaporizhzhya, Gulyapole
-                  </a>
-                </span>
-                <span class="home__information">
-                  <a href="mailto:live.gp@gmail.com" class="home__link">
-                    <i class="bx bx-envelope home__icon"></i>
+                    <div class="home__icon">
+                      <svg width="20px" height="20px">
+                        <use href="./img/sprite.svg#envelope" />
+                      </svg>
+                    </div>
                     live.gp@gmail.com
+                    <svg class="external-link-icon" width="10px" height="10px">
+                      <use href="./img/sprite.svg#link" />
+                    </svg>
                   </a>
                 </span>
                 <span class="home__information">
-                  <a href="tel:+380667867752" class="home__link">
-                    <i class="bx bx-phone home__icon"></i>
+                  <a
+                    href="tel:+380667867752"
+                    class="home__link"
+                  >
+                    <div class="home__icon">
+                      <svg width="20px" height="20px">
+                        <use href="./img/sprite.svg#phone" />
+                      </svg>
+                    </div>
                     +380 66 786 77 52
+                    <svg class="external-link-icon" width="10px" height="10px">
+                      <use href="./img/sprite.svg#link" />
+                    </svg>
                   </a>
                 </span>
               </div>
             </div>
             <!-- Theme change button -->
-            <i
-              class="bx bx-moon chenge-theme"
+            <svg
+              class="change-theme moon"
               title="Theme"
               id="theme-button"
-            ></i>
+              width="20px"
+              height="20px"
+            >
+              <use href="./img/sprite.svg#moon"></use>
+            </svg>
+            <svg
+              class="change-theme sun"
+              title="Theme"
+              id="theme-button-light"
+              width="20px"
+              height="20px"
+              style="display: none"
+            >
+              <use href="./img/sprite.svg#sun"></use>
+            </svg>
             <!-- Button to generate and download the pdf. Available for desktop. -->
             <div class="generate-pdf" title="PDF creation" id="resume-button">
               <svg width="20px" height="20px">
@@ -273,6 +313,24 @@
                   </svg>
                 </div>
                 linkedin
+                <svg class="external-link-icon" width="10px" height="10px">
+                  <use href="./img/sprite.svg#link" />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/livegp/"
+                target="_blank"
+                class="social__link"
+              >
+                <div class="social__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./img/sprite.svg#github" />
+                  </svg>
+                </div>
+                github
+                <svg class="external-link-icon" width="10px" height="10px">
+                  <use href="./img/sprite.svg#link" />
+                </svg>
               </a>
               <a
                 href="https://www.facebook.com/oleksandr.pishta/"
@@ -285,6 +343,9 @@
                   </svg>
                 </div>
                 facebook
+                <svg class="external-link-icon" width="10px" height="10px">
+                  <use href="./img/sprite.svg#link" />
+                </svg>
               </a>
               <a
                 href="https://www.instagram.com/pishtaoleksandr/"
@@ -297,6 +358,9 @@
                   </svg>
                 </div>
                 instagram
+                <svg class="external-link-icon" width="10px" height="10px">
+                  <use href="./img/sprite.svg#link" />
+                </svg>
               </a>
               <a
                 href="https://twitter.com/live_gp"
@@ -309,6 +373,9 @@
                   </svg>
                 </div>
                 twitter
+                <svg class="external-link-icon" width="10px" height="10px">
+                  <use href="./img/sprite.svg#link" />
+                </svg>
               </a>
               <a
                 href="viber://chat?number=%2B380667867752"
@@ -321,6 +388,9 @@
                   </svg>
                 </div>
                 viber
+                <svg class="external-link-icon" width="10px" height="10px">
+                  <use href="./img/sprite.svg#link" />
+                </svg>
               </a>
               <a
                 href="https://telegram.me/live_gp"
@@ -333,6 +403,9 @@
                   </svg>
                 </div>
                 telegram
+                <svg class="external-link-icon" width="10px" height="10px">
+                  <use href="./img/sprite.svg#link" />
+                </svg>
               </a>
             </div>
           </section>
@@ -347,28 +420,58 @@
                 </div>
               </div>
               <div>
-                <span class="skills__circle"></span>Russian
-                <div class="skills__f-line">
-                  <div class="skills__line" style="width: 100%"></div>
+                <span class="languages__circle"></span>Russian
+                <div class="languages__f-line">
+                  <div class="languages__line" style="width: 100%"></div>
                 </div>
               </div>
               <div>
-                <span class="skills__circle"></span>Deutsch
-                <div class="skills__f-line">
-                  <div class="skills__line" style="width: 15%"></div>
+                <span class="languages__circle"></span>Deutsch
+                <div class="languages__f-line">
+                  <div class="languages__line" style="width: 15%"></div>
                 </div>
               </div>
               <div>
-                <span class="skills__circle"></span>English
-                <div class="skills__f-line">
-                  <div class="skills__line" style="width: 5%"></div>
+                <span class="languages__circle"></span>English
+                <div class="languages__f-line">
+                  <div class="languages__line" style="width: 5%"></div>
                 </div>
               </div>
             </div>
           </section>
-          <!--========== SKILLS  ==========-->
+          <!--========== HARD SKILLS  ==========-->
           <section class="section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">Hard skills</h2>
+            <div class="skills__container bd-grid">
+              <div>
+                <span class="skills__circle"></span>Html
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>Css
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>JavaScript
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
+                <span class="skills__circle"></span>React
+                <div class="skills__f-line">
+                  <div class="skills__line" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== SOFT SKILLS  ==========-->
+          <section class="section" id="skills">
+            <h2 class="section-title">Soft skills</h2>
             <div class="skills__container bd-grid">
               <div>
                 <span class="skills__circle"></span>Html
@@ -434,18 +537,110 @@
               </div>
             </div>
           </section>
-        </div>
-        <div class="resume__right">
-          <!--========== ABOUT ==========-->
-          <section class="about section" id="about">
-            <h2 class="section-title">About my</h2>
-            <p class="about__description">
-              My name is Oleksandr, I am 40 years old
+          <!--========== SUMMARY ==========-->
+          <section class="summary section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p class="summary__description">
+              My goal is to become a successful Full Stack developer who is able
+              to create innovative solutions and solve complex technical tasks.
+              I am always open to learning new things and constantly developing.
+              <br />
+              I am open to meeting and discussing cooperation. Feel free to
+              contact me
             </p>
           </section>
-          <!--========== EXPERIENCE ==========-->
+        </div>
+        <div class="resume__right">
+          <!--========== PROJECT EXPERIENCE ==========-->
+          <section class="project section" id="project">
+            <h2 class="section-title">Project experience</h2>
+            <div class="project__container bd-grid">
+              <div class="project__content">
+                <div class="project__time">
+                  <span class="project__rounder"></span>
+                  <span class="project__line"></span>
+                </div>
+                <div class="project__data bd-grid">
+                  <a
+                    class="project__link"
+                    href="https://b1b0nner.github.io/7UP/"
+                    target="_blank"
+                  >
+                    <h3 class="project__title">Bookshelf</h3>
+                    <svg class="external-link-icon" width="10px" height="10px">
+                      <use href="./img/sprite.svg#link" />
+                    </svg>
+                  </a>
+                  <span class="project__company"
+                    >[HTML5 · CSS · SCSS · JS · REST APIs · Parcel · Figma ·
+                    GitHub · Stylelint · ESLint]
+                  </span>
+                  <p class="project__description">
+                    Team project. In this project, I worked on a responsive menu
+                    that has a theme switcher and a login button, which I
+                    combined with login logic that another team member was
+                    responsible for. A button to scroll to the top of the page
+                    was also made.
+                  </p>
+                </div>
+              </div>
+              <div class="project__content">
+                <div class="project__time">
+                  <span class="project__rounder"></span>
+                  <span class="project__line"></span>
+                </div>
+                <div class="project__data bd-grid">
+                  <a
+                    class="project__link"
+                    href="https://vitalii-dashivets.github.io/project-chocolate/"
+                    target="_blank"
+                  >
+                    <h3 class="project__title">Simply chocolate</h3>
+                    <svg class="external-link-icon" width="10px" height="10px">
+                      <use href="./img/sprite.svg#link" />
+                    </svg>
+                  </a>
+                  <span class="project__company"
+                    >[HTML5 · CSS · SCSS · JS · Vite · Stylelint · Figma ·
+                    GitHub · HTML]</span
+                  >
+                  <p class="project__description">
+                    Team project. Worked on the feedback section (chocolate is
+                    loved), designed in the form of a carousel and a modal
+                    window of this section.
+                  </p>
+                </div>
+              </div>
+              <div class="project__content">
+                <div class="project__time">
+                  <span class="project__rounder"></span>
+                  <!-- <span class="project__line"></span> -->
+                </div>
+                <div class="project__data bd-grid">
+                  <a
+                    class="project__link"
+                    href="https://livegp.github.io/goit-markup-hw-07/"
+                    target="_blank"
+                  >
+                    <h3 class="project__title">WebStudio</h3>
+                    <svg class="external-link-icon" width="10px" height="10px">
+                      <use href="./img/sprite.svg#link" />
+                    </svg>
+                  </a>
+                  <span class="project__company"
+                    >[HTML5 · CSS · SCSS · Stylelint · Figma · GitHub]</span
+                  >
+                  <p class="project__description">
+                    An individual project in which he consolidated his basic
+                    layout skills
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--========== WORK EXPERIENCE ==========-->
           <section class="experience section" id="experience">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title">Work experience</h2>
             <div class="experience__container bd-grid">
               <div class="experience__content">
                 <div class="experience__time">
@@ -616,7 +811,8 @@
                 </div>
                 <div class="courses__data bd-grid">
                   <h3 class="courses__title">
-                    Conflict of interest: you need to know! From theory to practice
+                    Conflict of interest: you need to know! From theory to
+                    practice
                   </h3>
                   <span class="courses__company">2019 | Prometheus</span>
                   <!-- <p class="courses__description"></p> -->
@@ -650,10 +846,10 @@
                   <h3 class="certificate__title">
                     Certificate of intermediate digital literacy level B2
                   </h3>
-                  <span class="courses__company"
+                  <span class="certificate__company"
                     >2020 | Дія. Digital education
                   </span>
-                  <!-- <p class="courses__description">
+                  <!-- <p class="certificate__description">
                   </p> -->
                 </div>
               </div>
@@ -666,10 +862,10 @@
                   <h3 class="certificate__title">
                     Certificate of fluency in the state language
                   </h3>
-                  <span class="courses__company"
+                  <span class="certificate__company"
                     >2019 | Zaporizhzhia National University</span
                   >
-                  <!-- <p class="courses__description"></p> -->
+                  <!-- <p class="certificate__description"></p> -->
                 </div>
               </div>
             </div>
@@ -679,7 +875,9 @@
     </main>
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
-      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+      <svg class="scrolltop__icon" width="20px" height="20px">
+        <use href="./img/sprite.svg#arrow" />
+      </svg>
     </a>
     <!--========== HTML2PDF ==========-->
     <script src="./js/html2pdf.bundle.min.js"></script>

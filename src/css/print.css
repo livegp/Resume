@@ -45,18 +45,21 @@
   .languages__container,
   .skills__container,
   .education__container,
+  .project__container,
   .experience__container,
   .courses__container,
   .certificate__container {
     gap: 0.7rem;
   }
   .education__time,
+  .project__time,
   .experience__time,
   .courses__time,
   .certificate__time {
     padding-right: 0.5rem;
   }
   .education__rounder,
+  .project__rounder,
   .experience__rounder,
   .courses__rounder,
   .certificate__rounder {
@@ -65,6 +68,7 @@
     margin-top: 0.22rem;
   }
   .education__line,
+  .project__line,
   .experience__line,
   .courses__line,
   .certificate__line {
@@ -73,6 +77,7 @@
     transform: translate(5px, 0);
   }
   .education__data,
+  .project__data,
   .experience__data,
   .courses__data,
   .certificate__data {
@@ -104,7 +109,7 @@
     padding: 0 1.5rem;
   }
   .section-title,
-  .about__description {
+  .summary__description {
     text-align: initial;
   }
   @page {

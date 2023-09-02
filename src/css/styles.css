@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -11,7 +11,7 @@
   --container-color-alt: #f0efef;
   --body-color: #fcfcfc;
   /*========== Font and typography ==========*/
-  --body-font: "Montserrat", sans-serif;
+  --body-font: 'Montserrat', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -79,7 +79,7 @@ body.dark-theme {
   --body-color: #2b2b2b;
 }
 /*========== Button Dark/Light ==========*/
-.chenge-theme {
+.change-theme {
   position: absolute;
   left: 0;
   top: 2.2rem;
@@ -89,7 +89,7 @@ body.dark-theme {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.chenge-theme:hover {
+.change-theme:hover {
   color: var(--title-color);
 }
 /* Download button*/
@@ -100,11 +100,9 @@ body.dark-theme {
   font-weight: var(--font-medium);
   fill: var(--text-color);
 }
-
 .home__button:hover {
   fill: var(--title-color);
 }
-
 /*========== Generate PDF button ==========*/
 .generate-pdf {
   display: none;
@@ -152,6 +150,9 @@ body.dark-theme {
   background-color: var(--container-color-alt);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+}
+.external-link-icon {
+  fill: var(--text-color-light);
 }
 /*========== Dovnload PDF button ==========*/
 .home__button-movil {
@@ -262,24 +263,24 @@ body.dark-theme {
   background: var(--title-color);
 }
 .burger:before {
-  content: "";
+  content: '';
   top: -6px;
   transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .burger:after {
-  content: "";
+  content: '';
   bottom: -6px;
   transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .burger.active:before {
-  content: "";
+  content: '';
   top: 0px;
   transform: rotate(45deg);
   transition: top 300ms,
     transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .burger.active:after {
-  content: "";
+  content: '';
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms,
@@ -308,7 +309,7 @@ body.dark-theme {
   border-radius: 50%;
   justify-self: center;
 }
-.home__img[tabindex="0"]:focus {
+.home__img[tabindex='0']:focus {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -324,8 +325,8 @@ body.dark-theme {
   border-radius: 0%;
   transition: 0.1s;
 }
-.home__img[tabindex="0"]:focus,
-.home__img[tabindex="0"]:focus ~ * {
+.home__img[tabindex='0']:focus,
+.home__img[tabindex='0']:focus ~ * {
   pointer-events: none;
   cursor: zoom-out;
 }
@@ -339,31 +340,28 @@ body.dark-theme {
 .home__address {
   gap: 1rem;
 }
-.home__information {
-  display: flex;
-  align-items: center;
-  font-size: var(--small-font-size);
-}
 .home__icon {
+  display: flex;
   font-size: 1.2rem;
-  margin-right: 0.25rem;
-}
-.icon {
-  font-size: 0.75rem;
-  margin-left: 0.5rem;
 }
 .home__link {
   display: inline-flex;
+  gap: 0.25rem;
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--text-color);
+  fill: var(--text-color);
 }
 .home__link:hover {
   color: var(--title-color);
 }
-/*========== PROFILE ==========*/
-.about__description {
-  text-align: center;
+/*========== DESCRIPTION ==========*/
+.summary__description,
+.project__description,
+.experience__description,
+.courses__description,
+.certificate__description {
+  text-align: justify;
 }
 /*========== SOCIAL AND INTERESTS==========*/
 .social__container,
@@ -373,6 +371,7 @@ body.dark-theme {
 }
 .social__link {
   display: inline-flex;
+  gap: 0.5rem;
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--text-color);
@@ -380,18 +379,18 @@ body.dark-theme {
 }
 .social__link:hover {
   color: var(--title-color);
-  fill: var(---title-color);
 }
 
 .interests {
   display: flex;
+  gap: 5px;
 }
 
 .social__icon,
 .interests__icon {
+  display: flex;
   fill: var(--text-color);
   font-size: 1.2rem;
-  margin-right: 0.5rem;
   vertical-align: top;
 }
 /*========== SKILLS AND LANGUAGES ==========*/
@@ -429,20 +428,23 @@ body.dark-theme {
   background: var(--text-color);
   border-radius: 5px;
 }
-/*========== EDUCATION - EXPERIENCE - COURSES - CERTIFICATES ==========*/
+/*========== EDUCATION - PROJECT - EXPERIENCE - COURSES - CERTIFICATES ==========*/
 .education__content,
+.project__content,
 .experience__content,
 .courses__content,
 .certificate__content {
   display: flex;
 }
 .education__time,
+.project__time,
 .experience__time,
 .courses__time,
 .certificate__time {
   padding-right: 1rem;
 }
 .education__rounder,
+.project__rounder,
 .experience__rounder,
 .courses__rounder,
 .certificate__rounder {
@@ -455,6 +457,7 @@ body.dark-theme {
   margin-top: 0.1rem;
 }
 .education__line,
+.project__line,
 .experience__line,
 .courses__line,
 .certificate__line {
@@ -465,21 +468,29 @@ body.dark-theme {
   transform: translate(7px, 0);
 }
 .education__data,
+.project__data,
 .experience__data,
 .courses__data,
 .certificate__data {
   gap: 0.5rem;
 }
 .education__title,
+.project__title,
 .experience__title,
 .courses__title,
 .courses__title,
 .certificate__title {
+  display: inline;
   font-size: var(--h3-font-size);
 }
+.project__title:hover {
+  color: var(--text-color-light);
+}
 .education__company,
+.project__company,
 .experience__company,
-.courses__company {
+.courses__company,
+.certificate__company {
   font-size: var(--small-font-size);
   color: var(--text-color);
 }
@@ -503,7 +514,7 @@ body.dark-theme {
 }
 .scrolltop__icon {
   font-size: 1.2rem;
-  color: var(--text-color);
+  fill: var(--text-color);
 }
 .show-scroll {
   visibility: visible;

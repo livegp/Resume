@@ -35,6 +35,7 @@
 .scale-cv .languages__container,
 .scale-cv .skills__container,
 .scale-cv .education__container,
+.scale-cv .project__container,
 .scale-cv .experience__container,
 .scale-cv .courses__container,
 .scale-cv .certificate__container {
@@ -51,12 +52,14 @@
   font-size: var(--small-font-size);
 }
 .scale-cv .education__time,
+.scale-cv .project__time,
 .scale-cv .experience__time,
 .scale-cv .courses__time,
 .scale-cv .certificate__time {
   padding-right: 0.5rem;
 }
 .scale-cv .education__rounder,
+.scale-cv .project__rounder,
 .scale-cv .experience__rounder,
 .scale-cv .courses__rounder,
 .scale-cv .certificate__rounder {
@@ -65,6 +68,7 @@
   margin-top: 0.22rem;
 }
 .scale-cv .education__line,
+.scale-cv .project__line,
 .scale-cv .experience__line,
 .scale-cv .courses__line,
 .scale-cv .certificate__line {
@@ -73,6 +77,7 @@
   transform: translate(5px, 0);
 }
 .scale-cv .education__data,
+.scale-cv .project__data,
 .scale-cv .experience__data,
 .scale-cv .courses__data,
 .scale-cv .certificate__data {

@@ -46,7 +46,7 @@
     display: inline-block;
   }
   .section-title,
-  .about__description {
+  .summary__description {
     text-align: initial;
   }
   .home__container {
