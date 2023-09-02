@@ -152,6 +152,8 @@ body.dark-theme {
   transition: 0.3s;
 }
 .external-link-icon {
+  font-size: 0.6rem;
+  /* color: var(--text-color-light); */
   fill: var(--text-color-light);
 }
 /*========== Dovnload PDF button ==========*/
@@ -429,6 +431,12 @@ body.dark-theme {
   border-radius: 5px;
 }
 /*========== EDUCATION - PROJECT - EXPERIENCE - COURSES - CERTIFICATES ==========*/
+.project__link {
+  color: var(--title-color);;
+}
+.project__link:hover {
+  color: var(--text-color-light);
+}
 .education__content,
 .project__content,
 .experience__content,
@@ -483,9 +491,6 @@ body.dark-theme {
   display: inline;
   font-size: var(--h3-font-size);
 }
-.project__title:hover {
-  color: var(--text-color-light);
-}
 .education__company,
 .project__company,
 .experience__company,
@@ -514,6 +519,7 @@ body.dark-theme {
 }
 .scrolltop__icon {
   font-size: 1.2rem;
+  color: var(--text-color);
   fill: var(--text-color);
 }
 .show-scroll {
