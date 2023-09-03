@@ -1,21 +1,40 @@
 {
-  "name": "vanilla-app-template",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "resume",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://livegp.github.io/resume",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/project-chocolate/",
-    "preview": "vite preview"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /resume/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livegp/resume.git"
+  },
+  "keywords": [],
+  "author": "Oleksander Pishta <live.gp@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livegp/resume/issues"
   },
   "devDependencies": {
-    "vite": "^4.0.0",
-    "glob": "^8.1.0"
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/packager-xml": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "@parcel/transformer-xml": "^2.8.3",
+    "buffer": "^5.7.1",
+    "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-html-inject": "^1.0.1"
+    "@parcel/config-default": "^2.9.3",
+    "axios": "^1.4.0",
+    "modern-normalize": "^2.0.0",
+    "notiflix": "^3.2.6",
+    "scss-reset": "^1.4.2",
+    "simplelightbox": "^2.14.1"
   }
 }
