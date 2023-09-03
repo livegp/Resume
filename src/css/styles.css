@@ -156,7 +156,7 @@ body.dark-theme {
   /* color: var(--text-color-light); */
   fill: var(--text-color-light);
 }
-/*========== Dovnload PDF button ==========*/
+/*========== Dovnload PDF button ??? ==========*/
 .home__button-movil {
   display: inline-block;
   border: 2px solid var(--text-color);
@@ -267,25 +267,31 @@ body.dark-theme {
 .burger:before {
   content: '';
   top: -6px;
-  transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition:
+    top 300ms 300ms,
+    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .burger:after {
   content: '';
   bottom: -6px;
-  transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition:
+    bottom 300ms 300ms,
+    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .burger.active:before {
   content: '';
   top: 0px;
   transform: rotate(45deg);
-  transition: top 300ms,
+  transition:
+    top 300ms,
     transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .burger.active:after {
   content: '';
   bottom: 0;
   transform: rotate(-45deg);
-  transition: bottom 300ms,
+  transition:
+    bottom 300ms,
     transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .burger.active {
@@ -323,7 +329,9 @@ body.dark-theme {
   max-width: 99%;
   max-height: 99%;
   margin: auto;
-  box-shadow: 0 0 20px #000, 0 0 0 100vh rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 20px #000,
+    0 0 0 100vh rgba(0, 0, 0, 0.5);
   border-radius: 0%;
   transition: 0.1s;
 }
@@ -432,7 +440,7 @@ body.dark-theme {
 }
 /*========== EDUCATION - PROJECT - EXPERIENCE - COURSES - CERTIFICATES ==========*/
 .project__link {
-  color: var(--title-color);;
+  color: var(--title-color);
 }
 .project__link:hover {
   color: var(--text-color-light);
