@@ -406,8 +406,9 @@ body.dark-theme {
   display: flex;
   align-items: center;
 }
-.skills__circle,
-.languages__circle {
+.skills__circle::before,
+.languages__circle::before {
+  content: '';
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -415,20 +416,6 @@ body.dark-theme {
   border-radius: 50%;
   margin-right: 0.5rem;
   margin-bottom: 0.2rem;
-}
-.skills__f-line,
-.languages__f-line {
-  display: flex;
-  width: 100%;
-  height: 2px;
-  background: var(--body-color);
-  border-radius: 5px;
-}
-.skills__line,
-.languages__line {
-  height: 2px;
-  background: var(--text-color);
-  border-radius: 5px;
 }
 /*========== EDUCATION - PROJECT - EXPERIENCE - COURSES - CERTIFICATES ==========*/
 .project__link {
@@ -444,13 +431,6 @@ body.dark-theme {
 .certificate__content {
   display: flex;
 }
-.education__time,
-.project__time,
-.experience__time,
-.courses__time,
-.certificate__time {
-  padding-right: 1rem;
-}
 .education__rounder,
 .project__rounder,
 .experience__rounder,
@@ -463,6 +443,7 @@ body.dark-theme {
   background-color: var(--text-color-light);
   border-radius: 50%;
   margin-top: 0.1rem;
+  margin-right: 1rem;
 }
 .education__line,
 .project__line,
