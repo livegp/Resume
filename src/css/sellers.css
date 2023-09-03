@@ -1,0 +1,132 @@
+.sellers {
+  color: var(--text-dark-color);
+  background-color: var(--background-color);
+}
+
+.sellers-title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sellers-title span {
+  color: var(--accent-color);
+}
+
+.sellers-list {
+  margin-bottom: 20px;
+}
+
+.sellers-image {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.sellers-text {
+  max-width: 306px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.sellers-button {
+  color: var(--text-white-color);
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 100px;
+  transition: var(--transition-speed);
+}
+
+.sellers-button:is(:hover, :focus) {
+  color: var(--accent-color);
+  background-color: var(--btn-hover-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .sellers-list li:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sellers {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .sellers-list li:first-child {
+    margin-bottom: 32px;
+  }
+
+  .sellers-image-first {
+    margin-bottom: 20px;
+  }
+
+  .sellers-text-tab-desk {
+    display: none;
+  }
+
+  .sellers-button {
+    display: block;
+    min-width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 12px 28px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sellers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .sellers-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .sellers-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .sellers-text-mobile {
+    display: none;
+  }
+
+  .wrap-sellers-txt-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sellers-button {
+    min-width: 162px;
+    max-height: 50px;
+    padding: 14px 40px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .sellers-text {
+    max-width: 407px;
+  }
+}

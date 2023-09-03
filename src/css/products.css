@@ -1,0 +1,116 @@
+@media screen and (min-width: 768px) {
+  .swiper-product {
+    padding-right: 126px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination-product {
+    padding-left: 126px;
+  }
+}
+
+.product-container {
+  background-color: var(--background-color);
+}
+
+.product-title {
+  margin-bottom: 32px;
+  color: var(--text-dark-color);
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .product-title {
+    margin-bottom: 50px;
+  }
+}
+
+.product-title span {
+  color: var(--accent-color);
+}
+
+.product-list {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .product-list {
+    column-gap: 18px;
+  }
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-height: 364px;
+  padding: 32px 24px 24px;
+  border: 1px solid var(--bullet-color);
+  border-radius: 15px;
+}
+
+.product-item {
+  max-height: 364px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-item {
+    width: 270px;
+  }
+}
+
+.product-card img {
+  display: block;
+  width: 230px;
+  height: 201px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+
+.product-card-title {
+  margin-bottom: 2px;
+  color: var(--text-dark-color);
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.product-text {
+  margin-bottom: 18px;
+  color: rgb(17 17 17 / 70%);
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.product-button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 20px;
+  color: var(--text-dark-color);
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.22;
+  background-color: var(--background-color);
+  border: 1px solid var(--bullet-color);
+  border-radius: 17px;
+  cursor: pointer;
+}

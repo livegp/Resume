@@ -1,8 +1,15 @@
 import { defineConfig } from 'vite';
-import eslintPlugin from '@nabla/vite-plugin-eslint';
-import stylelint from 'vite-plugin-stylelint';
+import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
+import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
-  plugins: [eslintPlugin(), stylelint({ fix: true }), injectHTML()],
+  root: 'src',
+  build: {
+    rollupOptions: {
+      input: glob.sync('./src/*.html'),
+    },
+    outDir: '../dist',
+  },
+  plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
 });
