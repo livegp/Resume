@@ -339,6 +339,7 @@ body.dark-theme {
   font-size: var(--normal-font-size);
 }
 .home__address {
+  font-style: normal;
   gap: 1rem;
 }
 .home__icon {
