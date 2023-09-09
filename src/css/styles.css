@@ -85,9 +85,11 @@ body.dark-theme {
   top: 2.2rem;
   display: flex;
   color: var(--text-color);
-  fill: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 .change-theme:hover {
   color: var(--title-color);
@@ -111,10 +113,28 @@ body.dark-theme {
   right: 0;
   font-size: 1.2rem;
   color: var(--text-color);
-  fill: var(--text-color);
   cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 .generate-pdf:hover {
+  color: var(--title-color);
+}
+/*========== Link to Resume site ==========*/
+.link-resume {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  display: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.link-resume:hover {
   color: var(--title-color);
 }
 /*========== CLASS CSS ==========*/

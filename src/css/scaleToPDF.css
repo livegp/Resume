@@ -3,6 +3,9 @@
 .scale-cv .generate-pdf {
   display: none;
 }
+.scale-cv .link-resume {
+  display: flex;
+}
 .scale-cv .bd-container {
   max-width: 595px;
 }
