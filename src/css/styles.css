@@ -506,6 +506,10 @@ body.dark-theme {
   z-index: var(--z-tooltip);
   transition: 0.4s;
   visibility: hidden;
+  box-shadow:
+  0px 1px 3px 0px rgba(112, 112, 112, 0.2),
+  0px 1px 1px 0px rgba(112, 112, 112, 0.14),
+  0px 2px 1px -1px rgba(112, 112, 112, 0.12);
 }
 .scrolltop__icon {
   font-size: 1.2rem;
