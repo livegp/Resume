@@ -308,6 +308,7 @@ body.dark-theme {
   height: 200px;
   border-radius: 50%;
   justify-self: center;
+  background-image: radial-gradient(var(--container-color-alt), var(--text-color-light));
 }
 .home__img[tabindex='0']:focus {
   position: fixed;
