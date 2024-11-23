@@ -3,10 +3,6 @@
   "version": "2.0.0",
   "description": "",
   "homepage": "https://livegp.github.io/resume",
-  "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /resume/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/livegp/resume.git"
@@ -17,23 +13,27 @@
   "bugs": {
     "url": "https://github.com/livegp/resume/issues"
   },
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /resume/"
+  },
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.8.3",
-    "@parcel/packager-xml": "^2.8.3",
-    "@parcel/transformer-sass": "^2.8.3",
-    "@parcel/transformer-webmanifest": "^2.8.3",
-    "@parcel/transformer-xml": "^2.8.3",
-    "buffer": "^5.7.1",
-    "parcel": "^2.8.3",
+    "@parcel/packager-raw-url": "^2.13.0",
+    "@parcel/packager-xml": "^2.13.0",
+    "@parcel/transformer-sass": "^2.13.0",
+    "@parcel/transformer-webmanifest": "^2.13.0",
+    "@parcel/transformer-xml": "^2.13.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.13.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^2.0.1"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
-    "axios": "^1.4.0",
-    "modern-normalize": "^2.0.0",
-    "notiflix": "^3.2.6",
+    "axios": "^1.7.7",
+    "modern-normalize": "^3.0.1",
+    "notiflix": "^3.2.7",
     "scss-reset": "^1.4.2",
-    "simplelightbox": "^2.14.1"
+    "simplelightbox": "^2.14.3"
   }
 }

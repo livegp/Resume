@@ -13,5 +13,6 @@
         "Redax",
         "Zaporizhzhia",
         "Zaporizhzhya"
-    ]
+    ],
+    "svg.preview.background": "dark-transparent"
 }
